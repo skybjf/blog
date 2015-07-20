@@ -11,74 +11,82 @@ title: 小久哥的只言片语测试
   </div>
 </div>
 <div class="container">
-  <div class="row">
-    <!-- <div class="col-md-4 blog_sidebar"> -->
-    <div class="col-md-4">
-      <ul class="sidebar">
-        <h3>文章列表</h3>
-        {% for post in site.posts %}
-      		<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    	{% endfor %}
-      </ul>
-    <!--   <ul class="sidebar">
-        <h3>Recent posts</h3>
-        <li><a href="#">Mauris lacinia fringilla lacus</a></li>
-      </ul>
-      <ul class="sidebar">
-        <h3>Popular posts</h3>
-        <li><a href="#">Suspendisse laoreet luctus</a></li>
-      </ul> -->
-    </div>
-    <div class="col-md-8">
-      <div class="blog_grid">
-        <h2 class="post_title"><a href="#">Qui postulant contentiones</a></h2>
-        <a href="#"><img src='{{ site.baseurl}}/images/b1.jpg' class="img-responsive" alt=""/></a>
-        <ul class="links">
-          <li><i class="fa fa-calendar"></i> December 03, 2014</li>
-          <li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
-          <li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
-        </ul>
-        <p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
-        <a href="#" class="blog_btn">Read more</a> </div>
-      <div class="blog_grid">
-        <h2 class="post_title"><a href="#">Vestibulum enim porttitor eu</a></h2>
-        <a href="#"><img src='{{ site.baseurl}}/images/b2.jpg' class="img-responsive" alt=""/></a>
-        <ul class="links">
-          <li><i class="fa fa-calendar"></i> December 02, 2014</li>
-          <li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
-          <li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
-        </ul>
-        <p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
-        <a href="#" class="blog_btn">Read more</a> </div>
-      <div class="blog_grid">
-        <h2 class="post_title"><a href="#">In viverra interdum erat vel</a></h2>
-        <a href="#"><img src='{{ site.baseurl}}/images/b1.jpg' class="img-responsive" alt=""/></a>
-        <ul class="links">
-          <li><i class="fa fa-calendar"></i> November 16, 2014</li>
-          <li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
-          <li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
-        </ul>
-        <p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
-        <a href="#" class="blog_btn">Read more</a> </div>
-      <div class="blog_grid">
-        <h2 class="post_title"><a href="#">Mauris lacinia fringilla lacus</a></h2>
-        <a href="#"><img src='{{ site.baseurl}}/images/b2.jpg' class="img-responsive" alt=""/></a>
-        <ul class="links">
-          <li><i class="fa fa-calendar"></i> November 09, 2014</li>
-          <li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
-          <li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
-        </ul>
-        <p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
-        <a href="#" class="blog_btn">Read more</a> </div>
-      <div class="pagination pagination__posts">
-        <ul>
-          <li class="active"><a href="#">1</a></li>
-          <li><a href="#" class="inactive">2</a></li>
-          <li><a href="#" class="inactive">3</a></li>
-          <li><a href="#" class="inactive">4</a></li>
-          <li class="next"><a href="#">Next</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+	<div class="row">
+	    <!-- <div class="col-md-4 blog_sidebar"> -->
+	    <div class="col-md-4">
+	      <ul class="sidebar">
+	        <h3>文章列表</h3>
+	        {% for post in site.posts %}
+	      		<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+	    	{% endfor %}
+	      </ul>
+	    <!--   <ul class="sidebar">
+	        <h3>Recent posts</h3>
+	        <li><a href="#">Mauris lacinia fringilla lacus</a></li>
+	      </ul>
+	      <ul class="sidebar">
+	        <h3>Popular posts</h3>
+	        <li><a href="#">Suspendisse laoreet luctus</a></li>
+	      </ul> -->
+	    </div>
+	    <div class="col-md-8">
+
+			{% for post in site.posts %}
+				<div class="blog_grid">
+					<h2 class="post_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+					<a href="#"><img src='{{ site.baseurl}}/images/b1.jpg' class="img-responsive" alt=""/></a>
+					<ul class="links">
+						<li><i class="fa fa-calendar"></i>{{ post.date | date_to_string }} </li>
+						<li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
+						<li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
+					</ul>
+					<p>{{ post.excerpt }}</p>
+					<a href="{{ site.baseurl }}{{ post.url }}" class="blog_btn">Read more</a> 
+				</div>
+			{% endfor %}
+			
+			<div class="blog_grid">
+				<h2 class="post_title"><a href="#">Vestibulum enim porttitor eu</a></h2>
+				<a href="#"><img src='{{ site.baseurl}}/images/b2.jpg' class="img-responsive" alt=""/></a>
+				<ul class="links">
+					<li><i class="fa fa-calendar"></i> December 02, 2014</li>
+					<li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
+					<li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
+				</ul>
+				<p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
+				<a href="#" class="blog_btn">Read more</a>
+			</div>
+			<div class="blog_grid">
+				<h2 class="post_title"><a href="#">In viverra interdum erat vel</a></h2>
+				<a href="#"><img src='{{ site.baseurl}}/images/b1.jpg' class="img-responsive" alt=""/></a>
+				<ul class="links">
+					<li><i class="fa fa-calendar"></i> November 16, 2014</li>
+					<li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
+					<li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
+				</ul>
+				<p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
+				<a href="#" class="blog_btn">Read more</a>
+			</div>
+			<div class="blog_grid">
+				<h2 class="post_title"><a href="#">Mauris lacinia fringilla lacus</a></h2>
+				<a href="#"><img src='{{ site.baseurl}}/images/b2.jpg' class="img-responsive" alt=""/></a>
+				<ul class="links">
+					<li><i class="fa fa-calendar"></i> November 09, 2014</li>
+					<li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
+					<li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
+				</ul>
+				<p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
+				<a href="#" class="blog_btn">Read more</a>
+			</div>
+			<div class="pagination pagination__posts">
+				<ul>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#" class="inactive">2</a></li>
+					<li><a href="#" class="inactive">3</a></li>
+					<li><a href="#" class="inactive">4</a></li>
+					<li class="next"><a href="#">Next</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
