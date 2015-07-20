@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: temp3
 title: 小久哥的只言片语测试
 ---
 
-{% include header.html %}
 
 <h2>{{ page.title }}</h2>
 
@@ -14,4 +13,3 @@ title: 小久哥的只言片语测试
       <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
 </ul>
-{% include footer.html %}
