@@ -39,7 +39,7 @@ title: 小久哥的只言片语测试
 						<li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
 						<li class="last"><i class="fa fa-comments"></i> <a href="#">No Comments</a></li>
 					</ul>
-					<p>{{ post.excerpt }}</p>
+					<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 					<a href="{{ site.baseurl }}{{ post.url }}" class="blog_btn">Read more</a> 
 				</div>
 			{% endfor %}
