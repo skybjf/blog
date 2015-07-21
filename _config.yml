@@ -2,3 +2,4 @@ baseurl: /blog
 pygments: true
 safe: false
 auto: true
+excerpt_separator:""
