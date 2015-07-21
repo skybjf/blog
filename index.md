@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello World!
+title: 小久哥——只言片语
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
