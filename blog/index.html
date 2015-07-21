@@ -30,19 +30,10 @@ title: 小久哥的只言片语测试
 	      </ul> -->
 	    </div>
 	    <div class="col-md-8">
-<ul>
-	{% for post in site.posts %}
-	<li>
-		<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-		{{ post.excerpt }}
-	</li>
-	{% endfor %}
-</ul>
-
 			{% for post in site.posts %}
 				<div class="blog_grid">
 					<h2 class="post_title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-					<a href="#"><img src='{{ site.baseurl}}/images/b1.jpg' class="img-responsive" alt=""/></a>
+					<!-- <a href="#"><img src='{{ site.baseurl}}/images/b1.jpg' class="img-responsive" alt=""/></a> -->
 					<ul class="links">
 						<li><i class="fa fa-calendar"></i>{{ post.date | date_to_long_string }} </li>
 						<li><i class="fa fa-user"></i> <a href="#">Chris</a></li>
@@ -53,7 +44,7 @@ title: 小久哥的只言片语测试
 				</div>
 			{% endfor %}
 			
-			<div class="blog_grid">
+<!-- 			<div class="blog_grid">
 				<h2 class="post_title"><a href="#">Vestibulum enim porttitor eu</a></h2>
 				<a href="#"><img src='{{ site.baseurl}}/images/b2.jpg' class="img-responsive" alt=""/></a>
 				<ul class="links">
@@ -85,7 +76,7 @@ title: 小久哥的只言片语测试
 				</ul>
 				<p>Mauris lacinia fringilla lacus, egestas ullamcorper leo finibus pulvinar. Integer aliquet egestas ipsum eget fermentum. Curabitur consequat vel nisl et eleifend. Donec mattis tincidunt diam, id vestibulum enim porttitor eu. Nam id felis vitae odio rhoncus malesuada pulvinar a massa. Suspendisse laoreet luctus finibus. In viverra interdum erat vel viverra. Vivamus efficitur gravida mi, nec cursus sem laoreet sed.</p>
 				<a href="#" class="blog_btn">Read more</a>
-			</div>
+			</div> -->
 			<div class="pagination pagination__posts">
 				<ul>
 					<li class="active"><a href="#">1</a></li>

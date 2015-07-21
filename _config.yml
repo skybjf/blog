@@ -1,4 +1,4 @@
 baseurl: /blog
 pygments: true
-safe: true
+safe: false
 auto: true
