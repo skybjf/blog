@@ -9,7 +9,9 @@ highlighter: pygments
 # so be sure to set them if your theme uses them.
 #
 title : 只言片语
-tagline: Site Tagline
+tagline: 一只小菜鸟
+keywords: 小久哥 前端 前端工程师 前端程序员 程序猿 攻城狮 程序员 工程师 css javascript 学习笔记
+description: 这是一个前端小菜鸟的博客~记录有关前端的一些小知识，相当于是学习笔记。
 author : 
   name : 小久哥
   email : skybjf@126.com
