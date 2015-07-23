@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 只言片语
-tagline: 一只小菜鸟
+tagline: 一只小菜鸟的博客
 ---
 {% include JB/setup %}
 
