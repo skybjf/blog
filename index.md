@@ -37,9 +37,12 @@ tagline: Supporting tagline
   {% endfor %}
 </ul>
 
-## 需要你做的
+## 需要你
 
 这个主题现在还没有完成。如果你想成为一名贡献者, [Fork](http://github.com/plusjade/jekyll-bootstrap){:target="_blank"}!
-我们需要清理一些主题，使指南更清晰与具体。
+
+
+
+
 
 

@@ -8,9 +8,9 @@ highlighter: pygments
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : 小久哥——只言片语
+title : 只言片语
 tagline: Site Tagline
-author :
+author : 小久哥
   name : 小久哥
   email : skybjf@126.com
   github : skybjf
@@ -94,7 +94,7 @@ JB :
       colorscheme: light
     duoshuo :
       short_name : jekyllbootstrap
-   
+
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
